@@ -91,7 +91,7 @@ Variables 1-79 are described above. Variable 80 ("ActLab") and 82 ("ActLabels") 
 Variable 81 ("Subject") denotes the number of the research subject measured.
 
 #The tidy dataset consists of 4 columns: 
-- �Subject"  : Subject identifier
-� �Activity" : The activity label in text format
-- �Variable" : Which of the 79 variables was measured
-- �Average"  : The mean value of that variable for the subject-activity pair in that record.
+- Subject"  : Subject identifier
+- Activity" : The activity label in text format
+- Variable" : Which of the 79 variables was measured
+- Average"  : The mean value of that variable for the subject-activity pair in that record.
