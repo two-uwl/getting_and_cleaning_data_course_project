@@ -1,6 +1,6 @@
 ##CodeBook.md
 
-run_analysis.R : An R script to generate a tidy dataset based on the Human Activity Recognition Using Smartphones Dataset Version 1.0. Original dataset by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, and Luca Oneto, Smartlab - Non Linear Complex Systems Laboratory, DITEN - Università degli Studi di Genova, Genoa, Italy.
+run_analysis.R : An R script to generate a tidy dataset based on the Human Activity Recognition Using Smartphones Dataset Version 1.0. Original dataset by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, and Luca Oneto, Smartlab - Non Linear Complex Systems Laboratory, DITEN - Universitï¿½ degli Studi di Genova, Genoa, Italy.
 
 Reference:
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
@@ -8,13 +8,13 @@ Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ort
 
 Description of the experiment, from the documentation included with the original dataset: 
 
-ÒThe experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test dataÉ 
+"The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data" 
 For each record it is provided:
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
 - A 561-feature vector with time and frequency domain variables. 
 - Its activity label. 
-- An identifier of the subject who carried out the experiment.Ó
+- An identifier of the subject who carried out the experiment.ï¿½
 
 The R script prepares a tidy dataset that includes the values of the 79 mean and standard deviation measures from the original 561-feature dataset, averaged for each subject and activity. 
 #The steps included in the script for data processing include:
@@ -26,8 +26,8 @@ The R script prepares a tidy dataset that includes the values of the 79 mean and
 - Throughout the script, dimensions of data frames are checked to make sure that all operations (merges and transformations) worked properly.
 
 A description of the features generated from the dataset is as follows, from the documentation included with the original data:
-ÒThe features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.Ó
+"The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions."
 
 From the information above, Reyes-Ortiz et al. named the variables as follows:
 - tBodyAcc-XYZ  (separated into X, Y, and Z components)
@@ -80,7 +80,7 @@ A set of variables were estimated from these signals. The measures included in t
 [79] "543 fBodyBodyGyroJerkMag-std()"      "ActLab"                              "Subject"                            
 [82] "ActLabels" 
 
-Variables 1-79 are described above. Variable 80 (ÒActLabÓ) and 82 (ÒActLabelsÓ) describe the activity type in numeric and text format, respectively, as follows:
+Variables 1-79 are described above. Variable 80 ("ActLab") and 82 ("ActLabels") describe the activity type in numeric and text format, respectively, as follows:
 - 1 WALKING
 - 2 WALKING_UPSTAIRS
 - 3 WALKING_DOWNSTAIRS
@@ -88,10 +88,10 @@ Variables 1-79 are described above. Variable 80 (ÒActLabÓ) and 82 (ÒActLabelsÓ) 
 - 5 STANDING
 - 6 LAYING
 
-Variable 81 (ÒSubjectÓ) denotes the number of the research subject measured.
+Variable 81 ("Subject") denotes the number of the research subject measured.
 
 #The tidy dataset consists of 4 columns: 
-- ÒSubject"  : Subject identifier
-Ñ ÒActivity" : The activity label in text format
-- ÒVariable" : Which of the 79 variables was measured
-- ÒAverage"  : The mean value of that variable for the subject-activity pair in that record.
+- ï¿½Subject"  : Subject identifier
+ï¿½ ï¿½Activity" : The activity label in text format
+- ï¿½Variable" : Which of the 79 variables was measured
+- ï¿½Average"  : The mean value of that variable for the subject-activity pair in that record.
