@@ -1,20 +1,20 @@
 ##CodeBook.md
 
-run_analysis.R : An R script to generate a tidy dataset based on the Human Activity Recognition Using Smartphones Dataset Version 1.0. Original dataset by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, and Luca Oneto, Smartlab - Non Linear Complex Systems Laboratory, DITEN - Universit� degli Studi di Genova, Genoa, Italy.
+run_analysis.R : An R script to generate a tidy dataset based on the Human Activity Recognition Using Smartphones Dataset Version 1.0. Original dataset by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, and Luca Oneto, Smartlab - Non Linear Complex Systems Laboratory, DITEN - Universit. degli Studi di Genova, Genoa, Italy.
 
-Reference:
+#Reference:
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
 
 Description of the experiment, from the documentation included with the original dataset: 
 
-"The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data" 
+"The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 For each record it is provided:
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
 - A 561-feature vector with time and frequency domain variables. 
 - Its activity label. 
-- An identifier of the subject who carried out the experiment.�
+- An identifier of the subject who carried out the experiment."
 
 The R script prepares a tidy dataset that includes the values of the 79 mean and standard deviation measures from the original 561-feature dataset, averaged for each subject and activity. 
 #The steps included in the script for data processing include:
